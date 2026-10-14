@@ -10,6 +10,10 @@ body{
   background-color: var(--amarillo-claro);
 }
 
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
 .catalogo-card {
     width: 250px;
     max-width: 100%;
