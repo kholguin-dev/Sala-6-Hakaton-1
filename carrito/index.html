@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi carrito | TrendyShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Mi carrito</h1>
+    <a href="../catalogo/index.html">← Seguir comprando</a>
+  </header>
+
+  <main>
+    <section aria-labelledby="titulo-productos">
+      <h2 id="titulo-productos">Productos en tu carrito</h2>
+
+      <p id="carrito-vacio">
+        Tu carrito está vacío. Agrega productos desde el catálogo.
+      </p>
+
+      <div id="lista-carrito"></div>
+    </section>
+
+    <aside aria-labelledby="titulo-resumen">
+      <h2 id="titulo-resumen">Resumen de compra</h2>
+      <p>Total: <strong id="total-carrito">$0</strong></p>
+
+      <button class="boton-carrito" type="button">
+        <span class="icono-carrito" aria-hidden="true">🛒</span>
+        <span>Continuar compra</span>
+      </button>
+    </aside>
+  </main>
+
+  <script src="../js/carrito.js" defer></script>
+</body>
+</html>

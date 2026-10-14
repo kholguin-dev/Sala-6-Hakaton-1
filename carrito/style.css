@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 32px;
+  color: #30343b;
+  background: #fff9f0;
+  font-family: Arial, sans-serif;
+}
+
+header,
+main {
+  width: min(100%, 900px);
+  margin: 0 auto 24px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+section,
+aside,
+article {
+  padding: 20px;
+  border: 1px solid #e7e1ee;
+  border-radius: 14px;
+  background: #fff;
+}
+
+article {
+  margin-top: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 70px;
+  padding: 8px;
+  border: 1px solid #d8d2e2;
+  border-radius: 8px;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Botón para continuar con la compra */
+.boton-carrito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 16px 22px;
+  border: 2px solid #ff7e7e;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffcb56, #ffa259);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px #ffa25966;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-carrito:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px #ffa25988;
+}
+
+.boton-carrito:active {
+  transform: translateY(0);
+}
+
+.boton-carrito:focus-visible,
+.boton-eliminar:focus-visible {
+  outline: 3px solid #ffcb56;
+  outline-offset: 4px;
+}
+
+.icono-carrito {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+/* Botón para quitar un producto */
+.boton-eliminar {
+  margin-left: 12px;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #ffeded;
+  color: #a33b3b;
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 16px;
+  padding: 20px;
+  border: 1px solid #e7e1ee;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.producto-imagen {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #fff9f0;
+}
+
+.producto-detalles {
+  flex: 1;
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 16px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .producto {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .producto-imagen {
+    width: 100%;
+    height: 200px;
+  }
+}
