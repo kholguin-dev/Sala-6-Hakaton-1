@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Carrito de compras</h1>
+    <nav aria-label="Navegación principal">
+      <!-- Aquí puedes agregar enlaces del sitio -->
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="productos-carrito">
+      <h2 id="productos-carrito">Productos en tu carrito</h2>
+
+      <article class="producto">
+        <img
+          class="producto-imagen"
+          src="imagenes/producto.jpg"
+          alt="Imagen del producto"
+        >
+
+        <div class="producto-detalles">
+          <h3>Nombre del producto</h3>
+          <p>Descripción del producto</p>
+          <p>Precio: $0</p>
+
+          <label for="cantidad-producto">Cantidad</label>
+          <input
+            id="cantidad-producto"
+            name="cantidad"
+            type="number"
+            min="1"
+            value="1"
+          >
+
+          <button class="boton-eliminar" type="button">
+            Eliminar producto
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <aside aria-labelledby="resumen-compra">
+      <h2 id="resumen-compra">Resumen de compra</h2>
+      <p>Subtotal: $0</p>
+      <p>Total: $0</p>
+
+      <button class="boton-carrito" type="button">
+        <svg
+          class="icono-carrito"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
+        </svg>
+        <span>Continuar compra</span>
+      </button>
+    </aside>
+  </main>
+</body>
+</html>
