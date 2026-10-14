@@ -133,4 +133,16 @@ document.addEventListener("change", evento => {
     }
 });
 
+export function agregarProductoCarrito(producto) {
+    const carrito = leerCarrito();
+    const existente = carrito.find(item => item.id === producto.id);
+    
+    if (existente) {
+        existente.cantidad += 1;
+    } else {
+        carrito.push({ ...producto, cantidad: 1 });
+    }
+    guardarCarrito(carrito)
+}
+
 mostrarCarrito();
