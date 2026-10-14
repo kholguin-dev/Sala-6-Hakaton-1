@@ -1,21 +1,38 @@
 .mi-navbar {
   background-color: #FFEDB9 !important;
+  position: relative; 
+  z-index: 10;
 }
 
-
 .caja-logo {
-  background-color: #FFCB56;
-  border-bottom-right-radius: 12px;
-  display: flex;
+  background-color: #FFEDB9; /* Color de contraste para la caja */
+  border-bottom-right-radius: 16px; /* Bordes redondeados más marcados */
+  border-bottom-left-radius: 16px;  /* Bordes redondeados abajo a la izquierda */
+  padding: 15px 25px; /* Más espacio interno */
+  
+  /* TRUCO CLAVE 🪄: Posición para hacer que sobresalga */
+  position: relative;
+  top: 15px;         /* Empuja la caja 15px hacia abajo fuera del navbar */
+  z-index: 20;       /* Hace que la caja quede por encima de todo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra elegante abajo */
+  
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: #333;
 }
 
-
+/* 3. Aumentamos el tamaño de la imagen */
 .logo-img {
-  max-height: 45px;
+  height: 65px !important; /* Aumentamos el tamaño de la imagen */
   width: auto;
+  object-fit: contain;
+}
+
+.textoTrendy {
+    color: #FF7E7E;
+    font-family: 'Montserrat',
+}
 
 body, * {
   font-family: 'Montserrat', sans-serif;
