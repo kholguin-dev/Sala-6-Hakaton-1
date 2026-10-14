@@ -1,5 +1,6 @@
 // La logica de agregar productos al catalogo.
 import { getProductosRopa } from "../services/api.js"
+import { agregarProductoCarrito } from "./carrito.js"
 
 const catalogoHTML = document.getElementById('catalogo')
 const productos = await getProductosRopa()
@@ -11,8 +12,8 @@ async function renderCatalogo(){
         card.classList.add('col', 'd-flex', 'justify-content-center')
         
         card.innerHTML = `
-            <article id="${producto.id}" class="card catalogo-card text-start >
-                <div class="card-header catalogo-card-header" style="min-height: 100px;">
+            <article id="${producto.id}" class="card catalogo-card text-start">
+                <div class="card-header catalogo-card-header" style="min-height: 50px;">
                     <h3 class="catalogo-card-title">${producto.title}</h3>
                 </div>
                 <div class="card-body catalogo-card-body">
@@ -22,12 +23,16 @@ async function renderCatalogo(){
                     <p class="descripcion card-text catalogo-card-description">${producto.description}</p>
                     </div>                    
                     <button type="button" class="btn btn-success fw-bold catalogo-card-button">Agregar al carrito</button>
-                </div>
+                    </div>
                 <div class="card-footer text-muted">
                     <span class="fw-bold">Calificación:</span> ${producto.rating.rate}.
                 </div>
             </article>
         `
+        card.querySelector('.btn').addEventListener('click', () => {
+            agregarProductoCarrito(producto)
+        })
+        
         catalogoHTML.appendChild(card)
     })
 }
