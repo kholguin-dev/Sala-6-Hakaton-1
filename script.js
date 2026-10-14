@@ -36,7 +36,7 @@ fetch('contactanos/index.html')
         })
         .catch(error => console.error('Error al traer el formulario:', error));
 
-fetch('Navbar/index.html')
+fetch('Navbar/Footer.html')
         .then(respuesta => respuesta.text()) // Lo leemos como texto
         .then(html => {
             // 2. Convertimos ese texto en un documento HTML virtual
@@ -49,6 +49,25 @@ fetch('Navbar/index.html')
             // pegamos dentro del contenedor del html
             if (soloFormulario) {
                 document.getElementById('footer').appendChild(soloFormulario);
+            } else {
+                console.log("No se encontró el formulario en el archivo externo.");
+            }
+        })
+        .catch(error => console.error('Error al traer el formulario:', error));
+
+fetch('Navbar/Header.html')
+        .then(respuesta => respuesta.text()) // Lo leemos como texto
+        .then(html => {
+            // 2. Convertimos ese texto en un documento HTML virtual
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            
+            // Buscamos la seccion que traemos
+            const soloFormulario = doc.querySelector('#Navbar');
+            
+            // pegamos dentro del contenedor del html
+            if (soloFormulario) {
+                document.getElementById('header').appendChild(soloFormulario);
             } else {
                 console.log("No se encontró el formulario en el archivo externo.");
             }

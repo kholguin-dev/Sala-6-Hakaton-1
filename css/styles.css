@@ -6,6 +6,9 @@
     --rojo: #FF7E7E;
 
 }
+body{
+  background-color: var(--amarillo-claro);
+}
 
 .catalogo-card {
     width: 250px;
@@ -136,11 +139,4 @@
 
 body, * {
   font-family: 'Montserrat', sans-serif;
-}
-:root {
-    --amarillo-claro: #FFEDB9;
-    --amarillo-fuerte: #FFCB56;
-    --naranja: #FFA259;
-    --rojo: #FF7E7E;
-
 }
