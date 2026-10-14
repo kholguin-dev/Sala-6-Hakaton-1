@@ -1,0 +1,19 @@
+.mi-navbar {
+  background-color: #FFEDB9 !important;
+}
+
+
+.caja-logo {
+  background-color: #FFCB56;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+
+.logo-img {
+  max-height: 45px;
+  width: auto;
+}
