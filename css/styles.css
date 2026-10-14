@@ -68,6 +68,10 @@
 
 body, * {
   font-family: 'Montserrat', sans-serif;
+  
+}
+body{
+    background-color: var(--amarillo-claro);
 }
 :root {
     --amarillo-claro: #FFEDB9;
