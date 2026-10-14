@@ -19,23 +19,31 @@
     <section aria-labelledby="productos-carrito">
       <h2 id="productos-carrito">Productos en tu carrito</h2>
 
-      <article>
-        <h3>Nombre del producto</h3>
-        <p>Descripción del producto</p>
-        <p>Precio: $0</p>
-
-        <label for="cantidad-producto">Cantidad</label>
-        <input
-          id="cantidad-producto"
-          name="cantidad"
-          type="number"
-          min="1"
-          value="1"
+      <article class="producto">
+        <img
+          class="producto-imagen"
+          src="imagenes/producto.jpg"
+          alt="Imagen del producto"
         >
 
-        <button class="boton-eliminar" type="button">
-          Eliminar producto
-        </button>
+        <div class="producto-detalles">
+          <h3>Nombre del producto</h3>
+          <p>Descripción del producto</p>
+          <p>Precio: $0</p>
+
+          <label for="cantidad-producto">Cantidad</label>
+          <input
+            id="cantidad-producto"
+            name="cantidad"
+            type="number"
+            min="1"
+            value="1"
+          >
+
+          <button class="boton-eliminar" type="button">
+            Eliminar producto
+          </button>
+        </div>
       </article>
     </section>
 
