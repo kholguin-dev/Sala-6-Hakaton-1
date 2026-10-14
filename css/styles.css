@@ -1,8 +1,5 @@
-
-body, * {
-  font-family: 'Montserrat', sans-serif;
-}
-:root {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+  :root {
     --amarillo-claro: #FFEDB9;
     --amarillo-fuerte: #FFCB56;
     --naranja: #FFA259;
@@ -62,4 +59,48 @@ body, * {
     margin-top: auto;
     background-color: var(--rojo);
     color: #000;
+}
+
+.mi-navbar {
+  background-color: #FFEDB9 !important;
+  position: relative; 
+  z-index: 10;
+}
+
+.caja-logo {
+  background-color: #FFEDB9;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 15px 25px;
+  
+  position: relative;
+  top: 15px;
+  left: 15px;
+  z-index: 20;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo-img {
+  height: 100px !important;
+  width: auto;
+  object-fit: contain;
+}
+
+.textoTrendy {
+    color: #FF7E7E;
+    /* CORRECCIÓN: Se cambió la coma por el punto y coma, y se añadió sans-serif de respaldo */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*REBLUJO*/
+
+body, * {
+  font-family: 'Montserrat', sans-serif;
 }
