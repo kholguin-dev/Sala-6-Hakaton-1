@@ -48,7 +48,7 @@ function mostrarCarrito() {
     let total = 0;
 
     carrito.forEach(producto => {
-        const subtotal = producto.precio * producto.cantidad;
+        const subtotal = producto.price * producto.cantidad;
         total += subtotal;
 
         const tarjeta = document.createElement("article");
@@ -56,20 +56,20 @@ function mostrarCarrito() {
 
         const imagen = document.createElement("img");
         imagen.className = "producto-imagen";
-        imagen.src = producto.imagen;
-        imagen.alt = producto.nombre;
+        imagen.src = producto.image;
+        imagen.alt = producto.title;
 
         const detalles = document.createElement("div");
         detalles.className = "producto-detalles";
 
         const nombre = document.createElement("h3");
-        nombre.textContent = producto.nombre;
+        nombre.textContent = producto.title;
 
         const descripcion = document.createElement("p");
-        descripcion.textContent = producto.descripcion;
+        descripcion.textContent = producto.description;
 
         const precio = document.createElement("p");
-        precio.textContent = `Precio: ${formatoCOP.format(producto.precio)}`;
+        precio.textContent = `Precio: COP${formatoCOP.format(producto.price)}K`;
 
         const cantidad = document.createElement("input");
         cantidad.type = "number";
@@ -77,7 +77,7 @@ function mostrarCarrito() {
         cantidad.value = producto.cantidad;
         cantidad.className = "cantidad-carrito";
         cantidad.dataset.id = producto.id;
-        cantidad.setAttribute("aria-label", `Cantidad de ${producto.nombre}`);
+        cantidad.setAttribute("aria-label", `Cantidad de ${producto.title}`);
 
         const totalProducto = document.createElement("p");
         totalProducto.textContent = `Subtotal: ${formatoCOP.format(subtotal)}`;
