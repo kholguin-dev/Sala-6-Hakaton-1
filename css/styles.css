@@ -16,4 +16,14 @@
 .logo-img {
   max-height: 45px;
   width: auto;
+
+body, * {
+  font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --amarillo-claro: #FFEDB9;
+    --amarillo-fuerte: #FFCB56;
+    --naranja: #FFA259;
+    --rojo: #FF7E7E;
+
 }
