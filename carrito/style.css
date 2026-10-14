@@ -1,0 +1,40 @@
+.boton-carrito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 22px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #7657e8, #5938c8);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px #5938c844;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-carrito:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px #5938c866;
+}
+
+.boton-carrito:active {
+  transform: translateY(0);
+}
+
+.boton-carrito:focus-visible {
+  outline: 3px solid #f4c95d;
+  outline-offset: 4px;
+}
+
+.boton-carrito .flecha {
+  font-size: 22px;
+  transition: transform 0.2s ease;
+}
+
+.boton-carrito:hover .flecha {
+  transform: translateX(4px);
+}
