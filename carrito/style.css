@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 32px;
   color: #30343b;
-  background: #f7f5fb;
+  background: #fff9f0;
   font-family: Arial, sans-serif;
 }
 
@@ -49,6 +49,7 @@ button {
   cursor: pointer;
 }
 
+/* Botón para continuar con la compra */
 .boton-carrito {
   display: flex;
   align-items: center;
@@ -57,19 +58,19 @@ button {
   width: 100%;
   margin-top: 12px;
   padding: 16px 22px;
-  border: none;
+  border: 2px solid #ff7e7e;
   border-radius: 14px;
-  background: linear-gradient(135deg, #7657e8, #5938c8);
-  color: #fff;
+  background: linear-gradient(135deg, #ffcb56, #ffa259);
+  color: white;
   font-size: 16px;
   font-weight: 700;
-  box-shadow: 0 8px 18px #5938c844;
+  box-shadow: 0 8px 18px #ffa25966;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .boton-carrito:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px #5938c866;
+  box-shadow: 0 12px 24px #ffa25988;
 }
 
 .boton-carrito:active {
@@ -78,7 +79,7 @@ button {
 
 .boton-carrito:focus-visible,
 .boton-eliminar:focus-visible {
-  outline: 3px solid #f4c95d;
+  outline: 3px solid #ffcb56;
   outline-offset: 4px;
 }
 
@@ -88,24 +89,16 @@ button {
   flex-shrink: 0;
 }
 
+/* Botón para quitar un producto */
 .boton-eliminar {
   margin-left: 12px;
   padding: 9px 12px;
   border: none;
   border-radius: 8px;
-  background: #faeeee;
-  color: #b94b4b;
+  background: #ffeded;
+  color: #a33b3b;
 }
 
-@media (max-width: 650px) {
-  body {
-    padding: 16px;
-  }
-
-  main {
-    grid-template-columns: 1fr;
-  }
-}
 .producto {
   display: flex;
   align-items: center;
@@ -123,11 +116,21 @@ button {
   flex-shrink: 0;
   border-radius: 12px;
   object-fit: cover;
-  background: #f1eef6;
+  background: #fff9f0;
 }
 
 .producto-detalles {
   flex: 1;
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 16px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 500px) {
@@ -141,4 +144,3 @@ button {
     height: 200px;
   }
 }
-<a href="../catalogo/index.html">Seguir comprando</a>

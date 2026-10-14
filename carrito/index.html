@@ -17,37 +17,19 @@
     <section aria-labelledby="titulo-productos">
       <h2 id="titulo-productos">Productos en tu carrito</h2>
 
-      <p id="carrito-vacio" hidden>
-        Tu carrito está vacío. Explora el catálogo para agregar productos.
+      <p id="carrito-vacio">
+        Tu carrito está vacío. Agrega productos desde el catálogo.
       </p>
 
-      <!-- JavaScript mostrará aquí los productos guardados -->
       <div id="lista-carrito"></div>
     </section>
 
     <aside aria-labelledby="titulo-resumen">
       <h2 id="titulo-resumen">Resumen de compra</h2>
-      <p>
-        Total:
-        <strong id="total-carrito">$0</strong>
-      </p>
+      <p>Total: <strong id="total-carrito">$0</strong></p>
 
       <button class="boton-carrito" type="button">
-        <svg
-          class="icono-carrito"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <circle cx="9" cy="21" r="1"></circle>
-          <circle cx="20" cy="21" r="1"></circle>
-          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
-        </svg>
+        <span class="icono-carrito" aria-hidden="true">🛒</span>
         <span>Continuar compra</span>
       </button>
     </aside>
