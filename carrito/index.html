@@ -3,54 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrito de compras</title>
+  <title>Mi carrito | TrendyShop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <h1>Carrito de compras</h1>
-    <nav aria-label="Navegación principal">
-      <!-- Aquí puedes agregar enlaces del sitio -->
-    </nav>
+    <h1>Mi carrito</h1>
+    <a href="../catalogo/index.html">← Seguir comprando</a>
   </header>
 
   <main>
-    <section aria-labelledby="productos-carrito">
-      <h2 id="productos-carrito">Productos en tu carrito</h2>
+    <section aria-labelledby="titulo-productos">
+      <h2 id="titulo-productos">Productos en tu carrito</h2>
 
-      <article class="producto">
-        <img
-          class="producto-imagen"
-          src="imagenes/producto.jpg"
-          alt="Imagen del producto"
-        >
+      <p id="carrito-vacio" hidden>
+        Tu carrito está vacío. Explora el catálogo para agregar productos.
+      </p>
 
-        <div class="producto-detalles">
-          <h3>Nombre del producto</h3>
-          <p>Descripción del producto</p>
-          <p>Precio: $0</p>
-
-          <label for="cantidad-producto">Cantidad</label>
-          <input
-            id="cantidad-producto"
-            name="cantidad"
-            type="number"
-            min="1"
-            value="1"
-          >
-
-          <button class="boton-eliminar" type="button">
-            Eliminar producto
-          </button>
-        </div>
-      </article>
+      <!-- JavaScript mostrará aquí los productos guardados -->
+      <div id="lista-carrito"></div>
     </section>
 
-    <aside aria-labelledby="resumen-compra">
-      <h2 id="resumen-compra">Resumen de compra</h2>
-      <p>Subtotal: $0</p>
-      <p>Total: $0</p>
+    <aside aria-labelledby="titulo-resumen">
+      <h2 id="titulo-resumen">Resumen de compra</h2>
+      <p>
+        Total:
+        <strong id="total-carrito">$0</strong>
+      </p>
 
       <button class="boton-carrito" type="button">
         <svg
@@ -72,5 +52,7 @@
       </button>
     </aside>
   </main>
+
+  <script src="../js/carrito.js" defer></script>
 </body>
 </html>
