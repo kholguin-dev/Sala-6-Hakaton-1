@@ -1,4 +1,12 @@
-.mi-navbar {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+  :root {
+    --amarillo-claro: #FFEDB9;
+    --amarillo-fuerte: #FFCB56;
+    --naranja: #FFA259;
+    --rojo: #FF7E7E;
+
+}
+  .mi-navbar {
   background-color: #FFEDB9 !important;
   position: relative; 
   z-index: 10;
@@ -31,16 +39,11 @@
 
 .textoTrendy {
     color: #FF7E7E;
-    font-family: 'Montserrat',
+    /* CORRECCIÓN: Se cambió la coma por el punto y coma, y se añadió sans-serif de respaldo */
+    font-family: 'Montserrat', sans-serif;
 }
 
 body, * {
   font-family: 'Montserrat', sans-serif;
 }
-:root {
-    --amarillo-claro: #FFEDB9;
-    --amarillo-fuerte: #FFCB56;
-    --naranja: #FFA259;
-    --rojo: #FF7E7E;
 
-}
