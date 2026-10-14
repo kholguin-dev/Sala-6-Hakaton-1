@@ -6,6 +6,9 @@
     --rojo: #FF7E7E;
 
 }
+body{
+  background-color: var(--amarillo-claro);
+}
 
 .catalogo-card {
     width: 250px;
