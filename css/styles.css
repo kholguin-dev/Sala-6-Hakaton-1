@@ -9,3 +9,57 @@ body, * {
     --rojo: #FF7E7E;
 
 }
+
+.catalogo-card {
+    width: 250px;
+    max-width: 100%;
+    height: 300px;
+}
+
+.catalogo-card-header {
+    background-color: var(--amarillo-fuerte);
+}
+
+.catalogo-card-title {
+    display: -webkit-box;
+    overflow: hidden;
+    margin: 0;
+    font-size: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.catalogo-card-body {
+    display: flex;
+    min-height: 0;
+    flex: 1;
+    flex-direction: column;
+    background-color: var(--amarillo-claro);
+}
+
+.catalogo-card-image {
+    width: 100%;
+    height: 90px;
+    object-fit: contain;
+}
+
+.catalogo-card-price {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.catalogo-card-description {
+    display: -webkit-box;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.catalogo-card-button {
+    align-self: flex-start;
+    margin-top: auto;
+    background-color: var(--rojo);
+    color: #000;
+}
