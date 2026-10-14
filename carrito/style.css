@@ -1,9 +1,61 @@
+body {
+  margin: 0;
+  padding: 32px;
+  color: #30343b;
+  background: #f7f5fb;
+  font-family: Arial, sans-serif;
+}
+
+header,
+main {
+  width: min(100%, 900px);
+  margin: 0 auto 24px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+section,
+aside,
+article {
+  padding: 20px;
+  border: 1px solid #e7e1ee;
+  border-radius: 14px;
+  background: #fff;
+}
+
+article {
+  margin-top: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 70px;
+  padding: 8px;
+  border: 1px solid #d8d2e2;
+  border-radius: 8px;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
 .boton-carrito {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
   width: 100%;
+  margin-top: 12px;
   padding: 16px 22px;
   border: none;
   border-radius: 14px;
@@ -12,7 +64,6 @@
   font-size: 16px;
   font-weight: 700;
   box-shadow: 0 8px 18px #5938c844;
-  cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -25,16 +76,33 @@
   transform: translateY(0);
 }
 
-.boton-carrito:focus-visible {
+.boton-carrito:focus-visible,
+.boton-eliminar:focus-visible {
   outline: 3px solid #f4c95d;
   outline-offset: 4px;
 }
 
-.boton-carrito .flecha {
-  font-size: 22px;
-  transition: transform 0.2s ease;
+.icono-carrito {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
 }
 
-.boton-carrito:hover .flecha {
-  transform: translateX(4px);
+.boton-eliminar {
+  margin-left: 12px;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #faeeee;
+  color: #b94b4b;
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 16px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
 }
