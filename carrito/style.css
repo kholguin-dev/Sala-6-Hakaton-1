@@ -49,6 +49,7 @@ button {
   cursor: pointer;
 }
 
+/* Botón para continuar con la compra */
 .boton-carrito {
   display: flex;
   align-items: center;
@@ -57,10 +58,10 @@ button {
   width: 100%;
   margin-top: 12px;
   padding: 16px 22px;
-  border: none;
+  border: 2px solid #ff7e7e;
   border-radius: 14px;
   background: linear-gradient(135deg, #ffcb56, #ffa259);
-  color: #333;
+  color: white;
   font-size: 16px;
   font-weight: 700;
   box-shadow: 0 8px 18px #ffa25966;
@@ -78,7 +79,7 @@ button {
 
 .boton-carrito:focus-visible,
 .boton-eliminar:focus-visible {
-  outline: 3px solid #ff7e7e;
+  outline: 3px solid #ffcb56;
   outline-offset: 4px;
 }
 
@@ -88,6 +89,7 @@ button {
   flex-shrink: 0;
 }
 
+/* Botón para quitar un producto */
 .boton-eliminar {
   margin-left: 12px;
   padding: 9px 12px;
