@@ -1,6 +1,12 @@
-/*NAVBAR*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+  :root {
+    --amarillo-claro: #FFEDB9;
+    --amarillo-fuerte: #FFCB56;
+    --naranja: #FFA259;
+    --rojo: #FF7E7E;
 
-.mi-navbar {
+}
+  .mi-navbar {
   background-color: #FFEDB9 !important;
   position: relative; 
   z-index: 10;
@@ -33,35 +39,9 @@
 }
 
 .textoTrendy {
-    max-height: 50px !important;
-    padding: 10px 0px 0px 15px;
-}
-
-.nav-item {
-  padding: 0px 10px;
-}
-
-/*FOOTER*/
-.mi-footer {
-  background-color: var(--amarillo-claro);
-  border-top: 2px solid var(--amarillo-fuerte);
-  color: #333;
-}
-
-.footer-logo {
-  max-height: 60px;
-  width: auto;
-}
-
-.footer-link {
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: var(--rojo);
+    color: #FF7E7E;
+    /* CORRECCIÓN: Se cambió la coma por el punto y coma, y se añadió sans-serif de respaldo */
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*REBLUJO*/
@@ -73,10 +53,4 @@ body, * {
 body{
     background-color: var(--amarillo-claro);
 }
-:root {
-    --amarillo-claro: #FFEDB9;
-    --amarillo-fuerte: #FFCB56;
-    --naranja: #FFA259;
-    --rojo: #FF7E7E;
 
-}
